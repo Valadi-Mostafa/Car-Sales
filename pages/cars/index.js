@@ -1,20 +1,16 @@
-import Allbutton from "@/components/module/Allbutton";
 import Categories from "@/components/module/Categories";
 import SearchBar from "@/components/module/SearchBar";
 import CarsPage from "@/components/templates/CarsPage";
 import carsData from "@/data/carsData";
 
-function Index() {
-  const cars = carsData.slice(0, 3);
-
+function Details() {
   return (
-    <>
+    <div>
       <SearchBar />
       <Categories />
-      <Allbutton />
-      <CarsPage data={cars} />
-    </>
+      <CarsPage data={carsData} />
+    </div>
   );
 }
 
-export default Index;
+export default Details;
